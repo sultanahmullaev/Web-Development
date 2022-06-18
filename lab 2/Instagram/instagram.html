@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Login Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+			list-style: none;
+			text-decoration: none;
+			font-family: sans-serif;
+		}
+		
+		body{
+			background: rgb(250, 250, 250);
+			font-size: 14px;
+		}
+		
+		.phone img{
+			width: 350px;
+			height: auto;
+			margin: 50px 0px 0px 225px;
+			flex: auto;
+			float: left;
+		}
+
+		.main{
+			width: 350px;
+			height: auto;
+			margin: 50px 225px 0px 0px;
+			flex: auto;
+			float: right;
+		}
+		
+		.main .top, .signup{
+			background: rgb(255, 255, 255);
+			border: 1px solid rgb(230, 230, 230);
+			border-radius: 1px;
+			padding: 40px 40px 20px;
+		}
+		
+		.main .logo img{
+			width: 175px;
+			display: block;
+			margin: 0 auto 35px;
+		}
+		
+		.main .form .input_field{
+			margin-bottom: 5px;
+		}
+		
+		.main .form .input_field .input{
+			width: 100%;
+			background: rgb(250, 250, 250);
+			border: 1px solid rgb(239, 239, 239);
+			font-size: 12px;
+			border-radius: 3px;
+			color: #262626;
+			padding: 10px;
+		}
+		
+		.main .form .btn{
+			margin: 10px 0;
+			background-color: rgb(74, 164, 244);
+			border: 1px solid rgb(0, 0, 0);
+			border-radius: 4px;
+			text-align: center;
+			padding: 5px;
+		}
+		
+		.main .form .btn a{
+			color: rgb(255, 255, 255);
+			display: block;
+		}
+		
+		.main .or{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 15px;
+			margin: 15px 0 20px;
+		}
+		
+		.main .or .line{
+			width: 105px;
+			height: 2px;
+			background: rgb(239, 239, 239)
+		}
+		
+		.main .or p{
+			color: rgb(153, 153, 153);
+			font-size: 12px;
+		}
+		
+		.dif .fb{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.dif .fb img{
+			width: 16px;
+			height: 16px;
+		}
+		
+		.dif  .fb p{
+			color: rgb(56, 81, 133);
+			font-weight: 500;
+			margin-left: 10px;
+		}
+		
+		.dif .forgot{
+			font-size: 12px;
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		.dif .forgot a{
+			color: rgb(0, 53, 105);
+		}
+		
+		.signup{
+			margin: 10px 0 20px;
+			padding: 25px 40px;
+			text-align: center;
+			color: rgb(38, 38, 38);
+		}
+		
+		.signup a{
+			color: rgb(56, 151, 240);
+		}
+		
+		.apps{
+			text-align: center;
+			color: rgb(38, 38, 38);
+		}
+		
+		.apps p{
+			margin-bottom: 20px;
+		}
+		
+		.apps a img{
+			width: 135px;
+			height: 40px;
+			margin: 0 5px;
+		}
+		
+		.footer{
+			width: 935px;
+			margin: 100px 200px 0px 180px;
+			padding: 80px 0;
+			/* display: block; */
+			align-items: center;
+			clear: both;
+		}
+		
+		.footer .links ul li{
+			display: inline-block;
+			margin-right: 20px;
+			margin-left: 20px;
+			padding: auto;
+			line-height: 20px;
+		}
+		
+		
+		.footer .links ul li a{
+			color: rgb(153, 153, 153);
+			font-size: 11px;
+		}
+
+		.footer .copyright{
+			color: rgb(153, 153, 153);
+			margin-left: 360px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+    <main>
+		<div class="phone">
+			<img src="phone.png" alt="phone">
+		</div>
+        <div class="main">
+			<div class="top">
+				<div class="logo">
+					<img src="instagram.png" alt="instagram">
+				</div>
+				<div class="form">
+					<div class="input_field">
+						<input type="text" placeholder="Phone number, username, or email" class="input">
+					</div>
+					<div class="input_field">
+						<input type="password" placeholder="Password" class="input">
+					</div>
+					<div class="btn"><a href="#">Log In</a></div>
+				</div>
+				<div class="or">
+					<div class="line"></div>
+					<p>OR</p>
+					<div class="line"></div>
+				</div>
+				<div class="dif">
+					<div class="fb">
+						<img src="facebook.png" alt="facebook">
+						<p>Log in with Facebook</p>
+					</div>
+					<div class="forgot">
+						<a href="#">Forgot password?</a>
+					</div>
+				</div>
+			</div>
+			<div class="signup">
+				<p>Don't have an account? <a href="#">Sign up</a></p>
+			</div>
+			<div class="apps">
+				<p>Get the app.</p>
+				<div class="icons">
+					<a href="#"><img src="appstore.png" alt="appstore"></a>
+					<a href="#"><img src="googleplay.png" alt="googleplay"></a>
+				</div>
+			</div>
+		</div>
+    </main>
+
+    <footer>
+        <div class="footer">
+			<div class="links">
+				<ul>
+					<li><a href="#">Meta</a></li>
+					<li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a></li>
+					<li><a href="#">Help</a></li>
+                    <li><a href="#">API</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Top Accounts</a></li>
+					<li><a href="#">Hashtags</a></li>
+					<li><a href="#">Locations</a></li>
+					<li><a href="#">Instagram Lite</a></li>
+					<li><a href="#">Contact Uploading & Non-Users</a></li>
+					<li><a href="#">Dance</a></li>
+					<li><a href="#">Food & Drink</a></li>
+					<li><a href="#">Home & Garden</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Visual Arts</a></li>
+					<li><a href="#">English</a></li>
+				</ul>
+			</div>
+			<div class="copyright">© 2022 Instagram from Meta</div>
+		</div>
+    </footer>
+</body>
+</html>
