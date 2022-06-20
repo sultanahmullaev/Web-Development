@@ -24,7 +24,6 @@
 			width: 350px;
 			height: auto;
 			margin: 50px 0px 0px 225px;
-			flex: auto;
 			float: left;
 		}
 
@@ -32,7 +31,6 @@
 			width: 350px;
 			height: auto;
 			margin: 50px 225px 0px 0px;
-			flex: auto;
 			float: right;
 		}
 		
@@ -96,30 +94,30 @@
 			font-size: 12px;
 		}
 		
-		.dif .fb{
+		.alter .fb{
 			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
 		
-		.dif .fb img{
+		.alter .fb img{
 			width: 16px;
 			height: 16px;
 		}
 		
-		.dif  .fb p{
+		.alter .fb p{
 			color: rgb(56, 81, 133);
 			font-weight: 500;
 			margin-left: 10px;
 		}
 		
-		.dif .forgot{
+		.alter .forgot{
 			font-size: 12px;
 			text-align: center;
 			margin-top: 20px;
 		}
 		
-		.dif .forgot a{
+		.alter .forgot a{
 			color: rgb(0, 53, 105);
 		}
 		
@@ -150,32 +148,32 @@
 		}
 		
 		.footer{
-			width: 935px;
-			margin: 100px 200px 0px 180px;
-			padding: 80px 0;
-			/* display: block; */
+			padding: 60px 170px 50px 190px;
 			align-items: center;
 			clear: both;
 		}
 		
-		.footer .links ul li{
+		.footer .links1 ul li, .footer .links2 ul li{
 			display: inline-block;
-			margin-right: 20px;
-			margin-left: 20px;
+			margin-right: 15px;
 			padding: auto;
 			line-height: 20px;
 		}
 		
-		
-		.footer .links ul li a{
+		.footer .links1 ul li a, .footer .links2 ul li a{
 			color: rgb(153, 153, 153);
 			font-size: 11px;
 		}
 
+		.footer .links2 ul{
+			padding-left: 25%;
+		}
+
 		.footer .copyright{
 			color: rgb(153, 153, 153);
-			margin-left: 360px;
+			padding-left: 38%;
 			margin-top: 20px;
+			font-size: 13px;
 		}
 	</style>
 </head>
@@ -184,11 +182,13 @@
 		<div class="phone">
 			<img src="phone.png" alt="phone">
 		</div>
+
         <div class="main">
 			<div class="top">
 				<div class="logo">
 					<img src="instagram.png" alt="instagram">
 				</div>
+
 				<div class="form">
 					<div class="input_field">
 						<input type="text" placeholder="Phone number, username, or email" class="input">
@@ -198,12 +198,14 @@
 					</div>
 					<div class="btn"><a href="#">Log In</a></div>
 				</div>
+
 				<div class="or">
 					<div class="line"></div>
 					<p>OR</p>
 					<div class="line"></div>
 				</div>
-				<div class="dif">
+
+				<div class="alter">
 					<div class="fb">
 						<img src="facebook.png" alt="facebook">
 						<p>Log in with Facebook</p>
@@ -213,9 +215,11 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="signup">
 				<p>Don't have an account? <a href="#">Sign up</a></p>
 			</div>
+
 			<div class="apps">
 				<p>Get the app.</p>
 				<div class="icons">
@@ -228,7 +232,7 @@
 
     <footer>
         <div class="footer">
-			<div class="links">
+			<div class="links1">
 				<ul>
 					<li><a href="#">Meta</a></li>
 					<li><a href="#">About</a></li>
@@ -243,6 +247,11 @@
 					<li><a href="#">Locations</a></li>
 					<li><a href="#">Instagram Lite</a></li>
 					<li><a href="#">Contact Uploading & Non-Users</a></li>
+				</ul>
+			</div>
+
+			<div class="links2">
+				<ul>
 					<li><a href="#">Dance</a></li>
 					<li><a href="#">Food & Drink</a></li>
 					<li><a href="#">Home & Garden</a></li>
@@ -251,6 +260,7 @@
 					<li><a href="#">English</a></li>
 				</ul>
 			</div>
+
 			<div class="copyright">© 2022 Instagram from Meta</div>
 		</div>
     </footer>
