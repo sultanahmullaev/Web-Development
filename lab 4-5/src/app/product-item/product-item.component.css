@@ -1,0 +1,110 @@
+.main {
+    margin: 10px 30px 10px 30px;
+    border: 3px dashed black;
+    margin-bottom: 25px;
+    padding: 5px 15px 5px 15px;
+    background-color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#img {
+    position: relative;
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: fit-content;
+    border: 3px solid black;
+    margin-right: 25px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2 strong {
+    color: rgb(20, 126, 20);
+}
+
+h3 {
+    text-align: center;
+}
+
+h3 a {
+    color: navy;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+}
+
+p {
+    font-size: larger;
+}
+
+.share {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.share a {
+    margin-right: 10px;
+}
+
+.share a button {
+    background-color: deepskyblue;
+}
+
+#delete {
+    background-color: red;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    font-size: larger;
+    float: right;
+}
+
+.like .btn {
+    float: left;
+    margin-right: 20px;
+    background-color: deeppink;
+}
+
+.like p {
+    padding-top: 5px;
+}
+
+.rating {
+    font-size: 25px;
+    margin-right: 25px;
+    float: left;
+    color: navy;
+}
+  
+.stars {
+	width: 265px;
+	margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.stars span {
+	padding: 0;
+	font-size: 32px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+.stars > span:before {
+	content: '★';
+}
+
+.stars > span.active {
+	color: rgb(255, 0, 0);
+	text-shadow: 1px 1px gold;
+}

@@ -1,0 +1,82 @@
+<div *ngFor="let product of products $$"> 
+    <div class="main" *ngIf = "(product.categoryId == product.currentCategory || product.currentCategory == 0) && product.isActive">
+        <h3>
+            <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+                {{ product.name }}
+            </a>
+        </h3>
+
+        <div id="img">
+            <img  class = 'images' src="{{ product.img1 }}" height="210px" />
+            <img  class = "images" src="{{ product.img2 }}" height="210px" />
+            <img  class = "images" src="{{ product.img3 }}" height="210px" />
+        </div>
+
+        <h2><strong> {{ product.price | currency }} </strong></h2>
+
+        <h4 *ngIf="product.description">
+            Description: <br>
+            {{ product.description }}
+        </h4>
+
+        
+        <div class="like">
+            <button class="btn" type="button" (click)="like(product)">Like</button>
+
+            <p>Likes : {{product.likes}}</p>
+        </div>
+
+        <div class="share">
+            <a href="https://wa.me/+77767377441/?text={{ product.url }}">
+                <button>Share via WhatsApp</button>
+            </a>
+            <a href="https://telegram.me/share/url?url={{ product.url }}">
+                <button>Share via Telegram</button>
+            </a>
+        </div>
+
+        <button id="delete" type="button" (click)="delete(product)">Delete</button>
+        
+        <span class="rating">Rating</span>
+
+        <div class="stars" *ngIf="product.likes > 10000">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>    
+            <span class="active"></span>
+        </div>
+
+        <div class="stars" *ngIf="1000 < product.likes && product.likes < 10000">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>    
+            <span></span>
+        </div>
+
+        <div class="stars" *ngIf="500 < product.likes && product.likes < 1000">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span></span>    
+            <span></span>
+        </div>
+
+        <div class="stars" *ngIf="200 < product.likes && product.likes < 500">
+            <span class="active"></span>	
+            <span class="active"></span>    
+            <span></span>  
+            <span></span>    
+            <span></span>
+        </div>
+
+        <div class="stars" *ngIf="product.likes < 200">
+            <span class="active"></span>	
+            <span></span>    
+            <span></span>  
+            <span></span>    
+            <span></span>
+        </div>
+    </div>
+</div>

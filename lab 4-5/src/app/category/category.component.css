@@ -1,0 +1,14 @@
+.main {
+    margin: 20px 30px 20px 30px;
+}
+
+.main h3 {
+    margin-right: 20px;
+    float: left;
+    color: navy;
+}
+
+.main .category {
+    margin-top: 13px;
+    margin-right: 8px;
+}
